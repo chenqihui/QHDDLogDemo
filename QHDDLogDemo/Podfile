@@ -1,0 +1,7 @@
+target 'QHDDLogDemo' do
+
+platform :ios, '9.0'
+
+pod 'CocoaLumberjack', '~> 3.1.0'
+
+end

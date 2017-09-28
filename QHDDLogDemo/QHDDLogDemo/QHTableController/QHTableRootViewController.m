@@ -57,7 +57,7 @@
     NSString *title = self.arData[indexPath.row];
     
     UIViewController *subVC = nil;
-    if ([title isEqualToString:@"QHTableSubViewController"]) {
+    if ([title isEqualToString:@"DDLog"]) {
         subVC = [[QHTableSubViewController alloc] init];
     }
     else {

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F7370C80554725B069FA95B /* libPods-QHDDLogDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 057DDB20A0043533ACDDD9BC /* libPods-QHDDLogDemo.a */; };
 		740AE60B1F7BCBBC003268CC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 740AE60A1F7BCBBC003268CC /* main.m */; };
 		740AE60E1F7BCBBC003268CC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 740AE60D1F7BCBBC003268CC /* AppDelegate.m */; };
 		740AE6121F7BCBBC003268CC /* QHTableRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 740AE6111F7BCBBC003268CC /* QHTableRootViewController.m */; };
@@ -17,9 +18,13 @@
 		740AE6211F7BCBBC003268CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 740AE61F1F7BCBBC003268CC /* Main.storyboard */; };
 		740AE6231F7BCBBC003268CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 740AE6221F7BCBBC003268CC /* Assets.xcassets */; };
 		740AE6261F7BCBBC003268CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 740AE6241F7BCBBC003268CC /* LaunchScreen.storyboard */; };
+		740AE64E1F7D5DE2003268CC /* QHDDContextWhitelistFilterLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 740AE64D1F7D5DE2003268CC /* QHDDContextWhitelistFilterLogFormatter.m */; };
+		740AE6511F7D5E9D003268CC /* QHDDLogManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 740AE6501F7D5E9D003268CC /* QHDDLogManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		057DDB20A0043533ACDDD9BC /* libPods-QHDDLogDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-QHDDLogDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		44C378363570E39A692CFDF7 /* Pods-QHDDLogDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QHDDLogDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QHDDLogDemo/Pods-QHDDLogDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		740AE6061F7BCBBC003268CC /* QHDDLogDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QHDDLogDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		740AE60A1F7BCBBC003268CC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		740AE60C1F7BCBBC003268CC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -37,6 +42,12 @@
 		740AE6221F7BCBBC003268CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		740AE6251F7BCBBC003268CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		740AE6271F7BCBBC003268CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		740AE64C1F7D5DE2003268CC /* QHDDContextWhitelistFilterLogFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QHDDContextWhitelistFilterLogFormatter.h; sourceTree = "<group>"; };
+		740AE64D1F7D5DE2003268CC /* QHDDContextWhitelistFilterLogFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QHDDContextWhitelistFilterLogFormatter.m; sourceTree = "<group>"; };
+		740AE64F1F7D5E9D003268CC /* QHDDLogManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QHDDLogManager.h; sourceTree = "<group>"; };
+		740AE6501F7D5E9D003268CC /* QHDDLogManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QHDDLogManager.m; sourceTree = "<group>"; };
+		740AE6521F7D67B8003268CC /* QHDDLogMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QHDDLogMacros.h; sourceTree = "<group>"; };
+		C587E5106258E39D2DC1BAE1 /* Pods-QHDDLogDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QHDDLogDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-QHDDLogDemo/Pods-QHDDLogDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,17 +55,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F7370C80554725B069FA95B /* libPods-QHDDLogDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		34499C227939CDB15AC70933 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				057DDB20A0043533ACDDD9BC /* libPods-QHDDLogDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		740AE5FD1F7BCBBB003268CC = {
 			isa = PBXGroup;
 			children = (
 				740AE6081F7BCBBC003268CC /* QHDDLogDemo */,
 				740AE6071F7BCBBC003268CC /* Products */,
+				83C18CEB60BADDEF0BD8A473 /* Pods */,
+				34499C227939CDB15AC70933 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -69,6 +91,7 @@
 		740AE6081F7BCBBC003268CC /* QHDDLogDemo */ = {
 			isa = PBXGroup;
 			children = (
+				740AE6361F7CD65C003268CC /* QHDDLogMan */,
 				740AE60C1F7BCBBC003268CC /* AppDelegate.h */,
 				740AE60D1F7BCBBC003268CC /* AppDelegate.m */,
 				740AE61C1F7BCBBC003268CC /* ViewController.h */,
@@ -113,6 +136,27 @@
 			name = QHTableSubController;
 			sourceTree = "<group>";
 		};
+		740AE6361F7CD65C003268CC /* QHDDLogMan */ = {
+			isa = PBXGroup;
+			children = (
+				740AE6521F7D67B8003268CC /* QHDDLogMacros.h */,
+				740AE64C1F7D5DE2003268CC /* QHDDContextWhitelistFilterLogFormatter.h */,
+				740AE64D1F7D5DE2003268CC /* QHDDContextWhitelistFilterLogFormatter.m */,
+				740AE64F1F7D5E9D003268CC /* QHDDLogManager.h */,
+				740AE6501F7D5E9D003268CC /* QHDDLogManager.m */,
+			);
+			path = QHDDLogMan;
+			sourceTree = "<group>";
+		};
+		83C18CEB60BADDEF0BD8A473 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				44C378363570E39A692CFDF7 /* Pods-QHDDLogDemo.debug.xcconfig */,
+				C587E5106258E39D2DC1BAE1 /* Pods-QHDDLogDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -120,9 +164,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 740AE62A1F7BCBBC003268CC /* Build configuration list for PBXNativeTarget "QHDDLogDemo" */;
 			buildPhases = (
+				DA7FF05F8CF846F15CBE7C0F /* [CP] Check Pods Manifest.lock */,
 				740AE6021F7BCBBC003268CC /* Sources */,
 				740AE6031F7BCBBC003268CC /* Frameworks */,
 				740AE6041F7BCBBC003268CC /* Resources */,
+				A754B81D60E2E0429A2FADF9 /* [CP] Embed Pods Frameworks */,
+				D9EC6CBFC2248D714E9D1107 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -181,12 +228,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A754B81D60E2E0429A2FADF9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QHDDLogDemo/Pods-QHDDLogDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D9EC6CBFC2248D714E9D1107 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QHDDLogDemo/Pods-QHDDLogDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DA7FF05F8CF846F15CBE7C0F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		740AE6021F7BCBBC003268CC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				740AE6511F7D5E9D003268CC /* QHDDLogManager.m in Sources */,
 				740AE61E1F7BCBBC003268CC /* ViewController.m in Sources */,
+				740AE64E1F7D5DE2003268CC /* QHDDContextWhitelistFilterLogFormatter.m in Sources */,
 				740AE60E1F7BCBBC003268CC /* AppDelegate.m in Sources */,
 				740AE6121F7BCBBC003268CC /* QHTableRootViewController.m in Sources */,
 				740AE6151F7BCBBC003268CC /* QHDetailRootViewController.m in Sources */,
@@ -311,6 +408,7 @@
 		};
 		740AE62B1F7BCBBC003268CC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44C378363570E39A692CFDF7 /* Pods-QHDDLogDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = JC9Y4K55DX;
@@ -323,6 +421,7 @@
 		};
 		740AE62C1F7BCBBC003268CC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C587E5106258E39D2DC1BAE1 /* Pods-QHDDLogDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = JC9Y4K55DX;
@@ -352,6 +451,7 @@
 				740AE62C1F7BCBBC003268CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
